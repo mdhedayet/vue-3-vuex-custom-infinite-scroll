@@ -1,30 +1,40 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <!DOCTYPE html>
+  <html>
+    <head> </head>
+    <body>
+      <router-view />
+    </body>
+  </html>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 5px;
   text-align: center;
-  color: #2c3e50;
+  font-family: arial;
 }
 
-nav {
-  padding: 30px;
+.price {
+  color: grey;
+  font-size: 22px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.card button:hover {
+  opacity: 0.7;
 }
 </style>
